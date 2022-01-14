@@ -1,0 +1,8 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+matadata:
+  name: slow
+provisioner: kubernets.io/gce-pd
+parameters:
+  type: pd-standart
+  fstype: ext4
